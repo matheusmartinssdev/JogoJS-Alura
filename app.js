@@ -14,15 +14,19 @@ while (chute != numeroSecreto) {
         if (chute > numeroSecreto){
             alert(`O número secreto é menor que ${chute}`);
         } else{
-            alert(`O número secreto é maior que ${chute}`);
-        }
+                alert(`O número secreto é maior que ${chute}`);
+            }
         tentativas++;
     }
 }
-    if(tentativas > 1){
-        alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativas.`);
-    }  else {
-            alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativa.`);
-        }
+    //Operador ternário, fica melhor pois irá ser alterado somente uma letra.
+    let palavraTentativa = tentativas > 1 ? "tentativas" : "tentativa";
+    alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}`);
+
+    //if (tentativas > 1){
+    //    alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativas.`);
+    //}  else {
+    //          alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativa.`);
+    //        }
  
 
